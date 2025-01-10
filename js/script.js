@@ -56,10 +56,5 @@ experienceBtn.addEventListener('click', () => {
 });
 
 btnMenuHamburger.addEventListener('click', () => {
-    // alert('Prueba botón');
     btnMenuHamburger.classList.toggle('is-active');
 }); 
-
-// $("#hamburger-5").click(function(){
-//     $(this).toggleClass("is-active");
-// });
