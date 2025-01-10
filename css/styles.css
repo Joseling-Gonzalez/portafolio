@@ -52,6 +52,7 @@ body {
     float: right;
     height: 70px;
     background: transparent;
+    transition-duration: 0.5s;
 }
 
 #menuIcon {
@@ -106,7 +107,8 @@ body {
 #aboutMe {
     width: 100%;
     height: auto;
-    background-color: #450000;    
+    background-color: #450000; 
+    overflow: hidden;   
 }
 
 #profile {
@@ -123,6 +125,7 @@ body {
 #foto img {
     width: 196px;
     float: right;
+    overflow: hidden;
 }
 
 #description {   

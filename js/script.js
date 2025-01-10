@@ -7,6 +7,7 @@ const header = document.getElementById('header');
 const menuIcon = document.getElementById('menuIcon'); 
 const menuNav = document.getElementById('menu');
 const yearActual = document.getElementById('year');
+const btnMenuHamburger = document.getElementById('hamburger-5');
 
 experienceBtn.classList.toggle('active');
 containerLanguages.style.display = 'none';
@@ -54,3 +55,11 @@ experienceBtn.addEventListener('click', () => {
     }
 });
 
+btnMenuHamburger.addEventListener('click', () => {
+    // alert('Prueba botón');
+    btnMenuHamburger.classList.toggle('is-active');
+}); 
+
+// $("#hamburger-5").click(function(){
+//     $(this).toggleClass("is-active");
+// });
