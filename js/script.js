@@ -57,4 +57,6 @@ experienceBtn.addEventListener('click', () => {
 
 btnMenuHamburger.addEventListener('click', () => {
     btnMenuHamburger.classList.toggle('is-active');
+    menuNav.classList.toggle('active-menu');
+
 }); 

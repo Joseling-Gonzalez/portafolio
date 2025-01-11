@@ -219,8 +219,7 @@
         -webkit-transition-delay: 0.3s;
         -o-transition-delay: 0.3s;
         transition-delay: 0.3s;
-      }
-      
+      }      
       
       #hamburger-5.is-active .line:nth-child(2){
         opacity: 0;
@@ -254,7 +253,32 @@
      .box>svg, svg#sql{
         max-width: 4rem;
         height: auto;
-    }  
+      }  
+
+      #menu.active-menu {
+        float: right;
+        opacity: 1;
+        transform: translateY(50px);
+        transition-duration: 0.7s;
+        width: 300px;
+        height: 280px;
+        border-radius: 15px;
+        pointer-events: visible;
+        background: #edf2f4;
+    }
+
+    #menu ul li {
+        font-size: 1.3rem;
+        list-style: none;
+        display: block;
+        margin: 10px 20px;
+        letter-spacing: 1px;;
+        line-height: 70px;
+    }
+
+    #menu ul li a {
+        color: #450000;
+    }    
 }
 
 @media (max-width: 810px) {
