@@ -8,6 +8,7 @@ const menuIcon = document.getElementById('menuIcon');
 const menuNav = document.getElementById('menu');
 const yearActual = document.getElementById('year');
 const btnMenuHamburger = document.getElementById('hamburger-5');
+const menuOverlay = document.getElementById('menu-overlay');
 
 experienceBtn.classList.toggle('active');
 containerLanguages.style.display = 'none';
@@ -58,5 +59,6 @@ experienceBtn.addEventListener('click', () => {
 btnMenuHamburger.addEventListener('click', () => {
     btnMenuHamburger.classList.toggle('is-active');
     menuNav.classList.toggle('active-menu');
+    menuOverlay.classList.toggle('active-menu');
 
 }); 
