@@ -301,6 +301,8 @@
     #menu ul li a:hover, #header.activeScroll ul li a:hover{
        transform: none;
     }
+
+    
 }
 
 @media (max-width: 810px) {

@@ -9,6 +9,7 @@ const menuNav = document.getElementById('menu');
 const yearActual = document.getElementById('year');
 const btnMenuHamburger = document.getElementById('hamburger-5');
 const menuOverlay = document.getElementById('menu-overlay');
+const navLink = document.querySelectorAll('.navLink');
 
 experienceBtn.classList.toggle('active');
 containerLanguages.style.display = 'none';
@@ -60,5 +61,12 @@ btnMenuHamburger.addEventListener('click', () => {
     btnMenuHamburger.classList.toggle('is-active');
     menuNav.classList.toggle('active-menu');
     menuOverlay.classList.toggle('active-menu');
-
 }); 
+
+navLink.forEach( nlink => {
+    nlink.addEventListener('click', () => {
+        btnMenuHamburger.classList.remove('is-active');
+        menuNav.classList.remove('active-menu');
+        menuOverlay.classList.remove('active-menu');
+    });
+});
