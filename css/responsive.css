@@ -310,6 +310,34 @@
 }
 
  @media (max-width: 809px) {
-   
+    #itemList .timelineTree {
+        padding-top: 49px;
+    }  
 } 
+
+@media (max-width: 777px) {
+    #profile {
+        gap: 2rem;
+    }
+
+    #lineLanguages {
+        width: 10rem;
+    }
+
+    #containerExperience {
+        display:grid;
+    }
+
+    #timelineExperience,#timelineEducation {
+        width: 30rem;
+    }
+
+    #timelineEducation {
+        margin-top: 20px;
+    } 
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
 
