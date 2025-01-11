@@ -315,18 +315,18 @@ section>h1{
     letter-spacing: 0.5px;
 }
 
-#itemList>#detail, #itemList>.detailEducation {
+#itemList>.detail, #itemList>.detailEducation {
 padding-top: 28px;
 }
 
-#itemList>#detail>time, #itemList>.detailEducation>time {
+#itemList>.detail>time, #itemList>.detailEducation>time {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
     color: #581924;
     font-weight: bold;
 }
 
-#itemList>#detail>p, #itemList>.detailEducation>p {
+#itemList>.detail>p, #itemList>.detailEducation>p {
     padding-top: 10px;
     color: #2F4F4F;
     letter-spacing: 0.5px;
@@ -378,11 +378,11 @@ padding-top: 28px;
     color: #2F4F4F;
 }
 
-#itemLanguage>#detail {
+#itemLanguage>.detail {
     padding: 23px 0px 20px 33px;
 }
 
-#itemLanguage>#detail>time {
+#itemLanguage>.detail>time {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
     color: #581924;

@@ -186,7 +186,7 @@
     #lineLanguages {
         width: 14rem;
     }
-    
+
     .hamburger .line{
         width: 35px;
         height: 5px;
@@ -260,6 +260,13 @@
         background: transparent;
       }
 
+    #container-nav.active-menu {
+        display: flex;
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+    }
+
       #menu-overlay.active-menu {
         width: 100%;
         height: 100%;
@@ -272,13 +279,12 @@
       }
 
       #menu.active-menu {
-        float: right;
         opacity: 1;
         transform: translateY(50px);
         transition-duration: 0.7s;
         width: 550px;
         height: 280px;
-        margin-top: 40px;
+        margin-top: -15px;
         border-radius: 15px;
         pointer-events: visible;
         background: #ffffff;
@@ -300,12 +306,10 @@
     
     #menu ul li a:hover, #header.activeScroll ul li a:hover{
        transform: none;
-    }
-
-    
+    }    
 }
 
-@media (max-width: 810px) {
-
-}
+ @media (max-width: 809px) {
+   
+} 
 

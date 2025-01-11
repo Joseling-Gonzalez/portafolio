@@ -10,6 +10,7 @@ const yearActual = document.getElementById('year');
 const btnMenuHamburger = document.getElementById('hamburger-5');
 const menuOverlay = document.getElementById('menu-overlay');
 const navLink = document.querySelectorAll('.navLink');
+const containerNav = document.getElementById('container-nav');
 
 experienceBtn.classList.toggle('active');
 containerLanguages.style.display = 'none';
@@ -59,8 +60,10 @@ experienceBtn.addEventListener('click', () => {
 
 btnMenuHamburger.addEventListener('click', () => {
     btnMenuHamburger.classList.toggle('is-active');
+    containerNav.classList.toggle('active-menu');
     menuNav.classList.toggle('active-menu');
     menuOverlay.classList.toggle('active-menu');
+
 }); 
 
 navLink.forEach( nlink => {
