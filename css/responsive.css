@@ -336,8 +336,75 @@
         margin-top: 20px;
     } 
 
+    #techContainer {
+        height: 600px;
+    }
+
+    #boxesTech {
+        display:grid;
+        height: 500px;
+        justify-content: center;
+        align-items: normal;
+    }
+
+    .box {
+        width: 38rem;
+        height: 130px;
+        border-radius: 42px;
+    }
+
+    .box>svg, svg#sql {
+        max-width: 5.5rem;
+    }
+
+    #boxFrontEnd,
+    #boxBackEnd,
+    #boxTool {
+        gap: 1rem;
+    }
+
     .footer {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .box {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #aboutMe {
+        height: 650px;
+    }
+
+    #profile {
+       display: grid;
+       max-width: 75%;
+       margin: 0px auto;
+       gap: 3rem; 
+       height: 600px;
+       justify-content: normal;
+       place-items: center;
+       align-content: center;
+       padding-top: 6rem;
+    }
+
+    #description h1 {
+        padding: 0 1rem;
+    }
+
+    #description p {
+      padding: 0 11rem 0 1rem;
+    }
+
+    #foto img {
+        float: none;
+    }
+
+    .box {
+        width: 30rem;
     }
 }
 
