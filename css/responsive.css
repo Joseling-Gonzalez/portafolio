@@ -411,13 +411,6 @@
     }  
 } 
 
-/* @media (max-width: 795px) {
-    #profile {
-        gap: 0;
-    }
-
-} */
-
 @media (max-width: 777px) {
     #profile {
         height: 335px;
@@ -485,35 +478,76 @@
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 742px) {
+    #aboutMe {
+        height: 650px;
+    }
+
+    #profile {
+       display: grid;
+       max-width: 75%;
+       margin: 0px auto;
+       height: 600px;
+       justify-content: normal;
+       place-items: center;
+       align-content: center;
+       gap: 3rem;
+    }
+
+    #description {
+        margin-top: 8rem;
+    }
+
+    #description h1 {
+        padding: 0 1rem;
+    }
+
+    #description p {
+      padding: 0 11rem 0 1rem;
+    }
+
     #circle-photo {
-        width: 18.7rem;
-        height: 18.7rem;
-        top: 11.3rem;
-        right: 4rem;
+        width: 18.9rem;
+        height: 18.9rem;
+        top: 27rem;
+        right: 16rem;
     }
 
     #foto img {
-        width: 20rem;
+        width: 26rem;
+        height: 31rem;
+        margin-right: 7rem;
+        top: -6rem;
+    }
+}
+
+@media (max-width: 730px) {
+    #circle-photo {
+        width: 19.9rem;
+        height: 18.9rem;
+        top: 27rem;
+        right: 15rem;
     }
 }
 
 @media (max-width: 700px) {
     #circle-photo {
-        width: 17.9rem;
-        height: 17.9rem;
-        top: 10.5rem;
-        right: 3.1rem;
+        width: 20.8rem;
+        height: 18.9rem;
+        top: 27rem;
+        right: 14.1rem;
     }
 
     #foto img {
-        width: 18rem;
-    }
+        margin-right: 10rem;
+    } 
 
     .box {
         width: 35rem;
     }
 }
+
+
 
 @media (max-width: 650px) {
     #aboutMe {
@@ -528,11 +562,11 @@
        justify-content: normal;
        place-items: center;
        align-content: center;
-       padding-top: 6rem;
+       gap: 3rem;
     }
 
     #description {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     #description h1 {
@@ -544,17 +578,17 @@
     }
 
     #circle-photo {
-        width: 18.9rem;
+        width: 20.4rem;
         height: 18.9rem;
-        top: 26rem;
-        right: 13rem;
+        top: 27rem;
+        right: 12rem;
     }
 
     #foto img {
         width: 25rem;
         height: 29rem;
         margin-right: 12rem;
-        top: -1rem;
+        top: -5rem;
     }
 
     .box {
@@ -562,3 +596,43 @@
     }
 }
 
+@media (max-width: 412px) {
+    #timelineExperience, #timelineEducation {
+        width: 18.5rem;
+    }
+
+    #description h1 {
+        padding: 0 27rem 0 1rem;
+    }    
+
+    #description p {
+    padding: 0px 26rem 0 1rem;
+    }
+
+    #circle-photo {
+        width: 15.1rem;
+        height: 14rem;
+        top: 32rem;
+        right: 6.3rem;
+    }
+
+    #foto img {
+        width: 20rem;
+        height: 24rem;
+       margin-right: 25rem;
+       top: -3rem;
+    }
+
+    #boxFrontEnd, #boxBackEnd, #boxTool {
+        gap: 0rem;
+    }
+
+    .box {
+        width: 19rem;
+        height: 100px;
+    }
+
+    .box>svg, svg#sql {
+        max-width: 3.5rem;
+    }
+}
