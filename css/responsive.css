@@ -550,6 +550,11 @@
 
 
 @media (max-width: 650px) {
+    #menu.active-menu {
+        width: 430px;
+        height: 300px;
+    }
+
     #aboutMe {
         height: 650px;
     }
@@ -597,6 +602,11 @@
 }
 
 @media (max-width: 412px) {
+    #menu.active-menu {
+        width: 350px;
+        height: 270px;
+    }
+
     #timelineExperience, #timelineEducation {
         width: 18.5rem;
     }
@@ -634,5 +644,12 @@
 
     .box>svg, svg#sql {
         max-width: 3.5rem;
+    }
+
+    @media (max-width: 300px) {
+        #menu.active-menu {
+            width: 250px;
+            height: 260px;
+        }
     }
 }
