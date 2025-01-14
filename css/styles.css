@@ -114,18 +114,34 @@ body {
 #profile {
     display: flex;
     width: 1150px;
-    height: 350px; 
+    height: 435px; 
     margin: 0px auto;
-    padding: 115px 0px 0px;
+    padding: 90px 0px 0px;
     justify-content: normal;
     align-items: center;
-    gap: 18rem;
+    gap: 8rem;
+}
+
+#circle-photo {
+    position: absolute;
+    width: 26rem;
+    height: 26rem;
+    top: 12rem;
+    right: 28.5rem;
+    background-color: #fdf0d5;
+    border-radius: 20rem;    
+    z-index: 0;
+    overflow: hidden;
 }
 
 #foto img {
-    width: 196px;
+    position:relative;
+    width: 31rem;
+    height: 47rem;
     float: right;
     overflow: hidden;
+    object-fit: cover;
+    z-index: 1;
 }
 
 #description {   

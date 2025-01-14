@@ -11,7 +11,7 @@
 
     #profile {
         width: 80%;
-        height: 300px; 
+        height: 421px; 
         gap: 3rem;
     }
 
@@ -19,8 +19,26 @@
         margin-left: 5rem;
     }
 
+    #circle-photo {
+        position: absolute;
+        width: 24rem;
+        height: 24rem;
+        top: 11rem;
+        right: 11rem;
+        background-color: #fdf0d5;
+        border-radius: 22rem;    
+        z-index: 0;
+        overflow: hidden;
+    }
+
     #foto img {
-        width: 170px;        
+        position:relative;
+        width: 30rem;
+        height: 46rem;
+        float: right;
+        overflow: hidden;
+        object-fit: cover;
+        z-index: 1;     
     }
 
     #containerExperience {
@@ -89,7 +107,7 @@
 
     #containerExperience {
         column-gap: 3rem;
-    }   
+    }       
 }
 
 @media (max-width: 1180px) { 
@@ -99,6 +117,12 @@
     #description {
         margin-left: 3.5rem;
     } 
+    #circle-photo {
+        width: 25rem;
+        height: 25rem;
+        top: 11rem;
+        right: 10rem;
+    }
 } 
 
 @media (max-width: 1075px) {  
@@ -110,6 +134,18 @@
         margin-left: 2rem;
     } 
 
+    #circle-photo {
+        width: 24rem;
+        height: 24rem;
+        top: 12rem;
+        right: 9rem;
+    }
+
+    #foto img {
+        width: 28rem;
+        height: 42rem;
+    }
+
     #timelineExperience {
         width: 25rem;
     } 
@@ -120,6 +156,18 @@
 } 
 
 @media (max-width: 1036px) {
+    #circle-photo {
+        width: 23rem;
+        height: 23rem;
+        top: 13rem;
+        right: 8.8rem;
+    }
+
+    #foto img {
+        width: 27rem;
+        height: 40rem;
+    }
+
     #timelineExperience {
         width: 23rem;        
         padding: 2rem 3rem;
@@ -145,6 +193,10 @@
 }
 
 @media (max-width: 937px) {
+    #circle-photo {
+        right: 8rem;
+    }
+
     #timelineExperience {
         width: 20rem;       
     }
@@ -163,7 +215,17 @@
     }
 }
 
+@media (max-width: 910px) {
+    #circle-photo {
+        right: 7.8rem;
+    }
+}
+
 @media (max-width: 870px) {
+    #circle-photo {
+        right: 6rem;
+    }
+
     #description {
         margin-left: 1rem;
     } 
@@ -309,15 +371,64 @@
     }    
 }
 
+@media (max-width: 855px) {
+    #circle-photo {
+        right: 5rem;
+    }
+}
+
+@media (max-width:830px) {
+    #circle-photo {
+        right: 3.8rem;
+    }
+}
+
+@media (max-width: 818px) {
+    #profile {
+        gap: 0;
+    }
+
+}
+
  @media (max-width: 809px) {
+    #profile {
+        height: 380px;        
+    }
+
+    #circle-photo {
+        width: 20rem;
+        height: 20rem;
+        right: 6.2rem;
+    }
+
+    #foto img {
+        width: 24rem;
+        height: 35rem;
+    }
+
     #itemList .timelineTree {
         padding-top: 49px;
     }  
 } 
 
+/* @media (max-width: 795px) {
+    #profile {
+        gap: 0;
+    }
+
+} */
+
 @media (max-width: 777px) {
     #profile {
-        gap: 2rem;
+        height: 335px;
+        gap: 0;
+    }
+
+    #circle-photo {
+        width: 19.5rem;
+        height: 19.5rem;
+        top: 11.3rem;
+        right: 4.2rem;
     }
 
     #lineLanguages {
@@ -368,7 +479,37 @@
     }
 }
 
+@media (max-width: 760px) {
+    #foto img {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 740px) {
+    #circle-photo {
+        width: 18.7rem;
+        height: 18.7rem;
+        top: 11.3rem;
+        right: 4rem;
+    }
+
+    #foto img {
+        width: 20rem;
+    }
+}
+
 @media (max-width: 700px) {
+    #circle-photo {
+        width: 17.9rem;
+        height: 17.9rem;
+        top: 10.5rem;
+        right: 3.1rem;
+    }
+
+    #foto img {
+        width: 18rem;
+    }
+
     .box {
         width: 35rem;
     }
@@ -383,12 +524,15 @@
        display: grid;
        max-width: 75%;
        margin: 0px auto;
-       gap: 3rem; 
        height: 600px;
        justify-content: normal;
        place-items: center;
        align-content: center;
        padding-top: 6rem;
+    }
+
+    #description {
+        margin-top: 4rem;
     }
 
     #description h1 {
@@ -399,8 +543,18 @@
       padding: 0 11rem 0 1rem;
     }
 
+    #circle-photo {
+        width: 18.9rem;
+        height: 18.9rem;
+        top: 26rem;
+        right: 13rem;
+    }
+
     #foto img {
-        float: none;
+        width: 25rem;
+        height: 29rem;
+        margin-right: 12rem;
+        top: -1rem;
     }
 
     .box {
