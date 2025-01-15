@@ -408,7 +408,7 @@
 
     #itemList .timelineTree {
         padding-top: 49px;
-    }  
+    }
 } 
 
 @media (max-width: 777px) {
@@ -439,6 +439,10 @@
     #timelineEducation {
         margin-top: 20px;
     } 
+
+    #itemList .timelineTree,  #itemList>.detailEducation {
+        padding-top: 28px;
+    }  
 
     #techContainer {
         height: 600px;
@@ -646,10 +650,73 @@
         max-width: 3.5rem;
     }
 
+    @media (max-width: 350px) {        
+        #menu.active-menu {
+            width: 300;
+        }
+
+        #aboutMe {
+            height: 744px;
+        }
+
+        #description {
+            margin-top: 12rem;
+            margin-left: -6px;
+        }
+
+        #description h1 {
+          padding: 0 27rem 0 0rem;
+        }
+
+        #description p {
+            padding: 0px 30rem 0 0rem;
+        }
+
+        #circle-photo {
+            width: 15.9rem;
+            height: 15rem;
+            top: 35rem;
+            right: 4.3rem;
+        }
+
+        #foto img {
+            width: 20rem;
+            height: 26rem;
+            margin-right: 30rem;
+            margin-left: -1rem;
+            top: -3rem;
+        }
+
+        #timelineExperience, #timelineEducation {
+            width: 14.9rem;
+        }
+
+        #itemList .timelineOne, #itemList .timelineTree,
+        #itemList>.detailEducation {
+            padding-top: 49px;
+        } 
+        
+        #boxesTech {
+            height: 370px;
+        }
+
+        .box {
+            width: 16rem;
+            height: 80px;            
+        }
+
+        .box>svg, svg#sql {
+            max-width: 2.5rem;
+        }
+    }
+
     @media (max-width: 300px) {
         #menu.active-menu {
             width: 250px;
-            height: 260px;
+        }
+
+        #description h1 {   
+            padding: 0 27rem 0 0rem;
         }
     }
 }

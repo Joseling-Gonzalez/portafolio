@@ -11,11 +11,10 @@ const btnMenuHamburger = document.getElementById('hamburger-5');
 const menuOverlay = document.getElementById('menu-overlay');
 const navLink = document.querySelectorAll('.navLink');
 const containerNav = document.getElementById('container-nav');
+let year = new Date().getFullYear();
 
 experienceBtn.classList.toggle('active');
 containerLanguages.style.display = 'none';
-
-let year = new Date().getFullYear();
 yearActual.textContent = year;
 
 window.addEventListener('scroll', () => {
@@ -25,8 +24,7 @@ window.addEventListener('scroll', () => {
         menuIcon.style.backgroundColor = 'white';
     } else {
         menuIcon.style.backgroundColor = 'transparent';
-    }
-    
+    }    
 });
 
 languageBtn.addEventListener('click', () => { 
@@ -73,3 +71,11 @@ navLink.forEach( nlink => {
         menuOverlay.classList.remove('active-menu');
     });
 });
+
+/** Call Media query with matchMedia() method **/
+/* Section Profesional Profile */
+const mm_ProfesionalP = window.matchMedia('(max-width: 1260px)'); 
+
+//   function f_ProfesionalP(Event) {
+
+//   }
