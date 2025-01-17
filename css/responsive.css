@@ -605,6 +605,42 @@
     }
 }
 
+@media (max-width: 500px) {
+    #menu.active-menu {
+        width: 350px;
+        height: 270px;
+    }
+
+    #timelineExperience, #timelineEducation {
+        width: 18.5rem;
+    }
+
+    #description h1 {
+        padding: 0 27rem 0 1rem;
+    }    
+
+    #description p {
+    padding: 0px 26rem 0 1rem;
+    }
+
+    #circle-photo {
+        width: 15.1rem;
+        height: 14rem;
+        top: 32rem;
+        right: 6.3rem;
+    }
+
+    #foto img {
+        width: 20rem;
+        height: 24rem;
+       margin-right: 25rem;
+       top: -3rem;
+    }
+
+
+
+}
+
 @media (max-width: 412px) {
     #menu.active-menu {
         width: 350px;
@@ -695,6 +731,27 @@
         #itemList>.detailEducation {
             padding-top: 49px;
         } 
+
+        #legendColorTech { 
+            padding: 2.5rem 0 1rem 2rem;
+        }
+
+        #legendColorFrontEnd, #legendColorBackEnd, #legendColorTool {            
+            position: relative;  
+            margin: 0;          
+            margin-bottom: 1rem;
+        }
+
+        #techContainer {
+            height: 550px;
+        }
+
+        #legendColorTech>h4 {
+            float: none;
+            position: absolute;
+            display: block;
+            margin: -2.5rem 0 0 2rem;
+        }
         
         #boxesTech {
             height: 370px;
@@ -711,12 +768,95 @@
     }
 
     @media (max-width: 300px) {
+        #wrap {
+            width: 90%;
+        }
+
         #menu.active-menu {
             width: 250px;
         }
 
+        #profile {
+            max-width: 60%;
+        }
+
         #description h1 {   
-            padding: 0 27rem 0 0rem;
+            padding: 0 33rem 0 0rem;
+        }
+
+        #description p {
+            padding: 0px 31rem 0 0rem;
+        } 
+
+        #social {
+            margin: 3rem 0px 0px 0rem;
+        }
+
+        #circle-photo {
+            top: 37rem;
+            right: 2.6rem;
+        }
+
+        #foto img {
+            margin-left: -4rem;
+        }
+
+        #timelineExperience, #timelineEducation{
+            width: 11.5rem;
+        }
+
+        #lineLanguages {
+            width: 5rem;
+        }
+
+        #techContainer {
+            width: 90.1%;
+            height: 692px;
+            margin-left: 1.1rem;
+        }
+
+        #boxesTech {
+            height: 505px;
+            gap: 1rem;
+        }
+
+        .box {
+            width: 11rem;
+            height: 145px;
+        }
+
+        .box>svg, svg#sql {
+            max-width: 3.5rem;
+        }
+
+        #timelineEducation {
+            height: 25.9rem;
+        }
+
+        #itemList .timelineTwo, 
+        #itemList .timelineFour {
+            padding-top: 49px;
+        } 
+
+        #itemList>.detailEducationOne {
+            padding-top: 70px;
+        }
+
+        #legendColorTech { 
+            padding: 2.5rem 0 1rem 1rem;
+        }
+
+        #legendColorFrontEnd, #legendColorBackEnd, #legendColorTool {            
+            position: relative;  
+            margin: 0;          
+            margin-bottom: 1rem;
+        }
+
+        #legendColorTech>h4 {
+            float: none;
+            position: absolute;
+            display: block;
+            margin: -2.5rem 0 0 2rem;
         }
     }
 }

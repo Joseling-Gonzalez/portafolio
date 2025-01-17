@@ -442,7 +442,7 @@ padding-top: 28px;
 }
 
 #legendColorFrontEnd, #legendColorBackEnd, #legendColorTool {
-   position: absolute;
+    position: absolute;
     width: 18px;
     height: 18px;
     box-shadow: 0px 0px 3px #ccc inset;
