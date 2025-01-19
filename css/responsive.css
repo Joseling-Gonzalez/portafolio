@@ -640,7 +640,7 @@
 
 
 }
-/* 370 */
+
 @media (max-width:450px) {
     #profile {
         max-width: 80%;
@@ -690,7 +690,6 @@
         max-width: 3.4rem;
     }
 
-    /*****/
     #legendColorTech { 
         padding: 2.5rem 0 1rem 2rem;
     }
@@ -710,12 +709,6 @@
 
 
 }
-
-/* @media (max-width: 420px) {
-    #description p {
-        padding: -1px 23rem 0 1rem;
-    }
-} */
 
 @media (max-width: 400px) {
     #circle-photo {
