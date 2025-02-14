@@ -11,6 +11,9 @@ const btnMenuHamburger = document.getElementById('hamburger-5');
 const menuOverlay = document.getElementById('menu-overlay');
 const navLink = document.querySelectorAll('.navLink');
 const containerNav = document.getElementById('container-nav');
+const timelineExperience = document.getElementById('timelineExperience');
+const timelineEducation = document.getElementById('timelineEducation');
+
 let year = new Date().getFullYear();
 
 experienceBtn.classList.toggle('active');
@@ -27,7 +30,7 @@ window.addEventListener('scroll', () => {
     }    
 });
 
-languageBtn.addEventListener('click', () => { 
+languageBtn.addEventListener('click', () => {     
     if (languageBtn.classList.contains('active')) {
          experienceBtn.classList.remove('active'); 
     }
@@ -42,19 +45,45 @@ languageBtn.addEventListener('click', () => {
     }
 });
 
-experienceBtn.addEventListener('click', () => {
+experienceBtn.addEventListener('click', () => {   
     if(experienceBtn.classList.contains('active')) {
         languageBtn.classList.remove('active');    
     } else {
         fill.classList.remove('active');
         languageBtn.classList.remove('active');
-        experienceBtn.classList.toggle('active');
+        experienceBtn.classList.toggle('active');   
         containerLanguages.classList.remove('activeContainer');
         containerLanguages.style.display = 'none';
-        containerExperience.style.display = 'flex';
-        containerExperience.classList.toggle('activeContainer');
+        fn_mqueryContainerProfessionalProfile();
+    }
+
+    function fn_mqueryContainerProfessionalProfile () {
+        const  mquerymovil = window.matchMedia('(max-width: 449px)');
+        const  mquerymovilDos = window.matchMedia('(min-width: 450px) and (max-width: 550px)');
+        const  mquerydesktop = window.matchMedia('(min-width: 1261px)');
+
+        if(mquerymovil.matches)
+        {           
+            timelineExperience.classList.toggle('movilUno');
+            timelineEducation.classList.toggle('movilUno');
+            containerExperience.style.display = 'block';
+        }
+        else if(mquerymovilDos.matches)
+        {
+            console.log("mquerymovilDos " + {mquerymovilDos})
+            timelineExperience.classList.toggle('movilDos');
+            timelineEducation.classList.toggle('movilDos');
+            containerExperience.style.display = 'block';
+        }
+        else if(mquerydesktop.matches)
+        {
+            containerExperience.style.display = 'flex';
+            containerExperience.classList.toggle('activeContainer');
+        }
+
     }
 });
+
 
 btnMenuHamburger.addEventListener('click', () => {
     btnMenuHamburger.classList.toggle('is-active');
@@ -72,10 +101,4 @@ navLink.forEach( nlink => {
     });
 });
 
-/** Call Media query with matchMedia() method **/
-/* Section Profesional Profile */
-const mm_ProfesionalP = window.matchMedia('(max-width: 1260px)'); 
 
-//   function f_ProfesionalP(Event) {
-
-//   }

@@ -605,14 +605,10 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 450px) and (max-width: 500px) {
     #menu.active-menu {
         width: 350px;
         height: 270px;
-    }
-
-    #timelineExperience, #timelineEducation {
-        width: 18.5rem;
     }
 
     #description h1 {
@@ -637,9 +633,30 @@
        top: -3rem;
     }
 
+    #containerExperience {
+        margin-left: 0;
+    }
+
     #timelineExperience, #timelineEducation {
-        width: 23.6rem;
-        margin-left: 0.2rem;
+        display: block;
+        width: 79.7%;
+        margin-left: 0;
+    }
+
+    #timelineExperience.movilDos  {
+        display: block;
+        width: 79.7%;
+        margin-left: 0;
+    }
+
+    #timelineEducation.movilDos {
+        display: block;
+        width: 79.7%;
+        margin-left: 0;
+    }
+
+    #itemList .detailEducationOne {
+        padding-top: 50px;
     }
 
     #legendColorTech { 
@@ -659,22 +676,45 @@
         margin: -2.5rem 0 0 2rem;
     }
 
+    #techContainer {
+        height: 600px;
+        width: 100%;
+        margin-left: 0;
+    }
+
     #boxesTech {
-        height: 443px;
+        height: 430px;
     }
 
     .box {
-        width: 25rem;
-        height: 105px;
+        width: 21rem;
+        height: 100px;
     }
 
     .box>svg, svg#sql {
-        max-width: 4rem;
+        max-width: 3.4rem;
+    }
+
+    #legendColorTech { 
+        padding: 2.5rem 0 1rem 2rem;
+    }
+
+    #legendColorFrontEnd, #legendColorBackEnd, #legendColorTool {            
+        position: relative;  
+        margin: 0;          
+        margin-bottom: 1rem;
+    }
+
+    #legendColorTech>h4 {
+        float: none;
+        position: absolute;
+        display: block;
+        margin: -2.5rem 0 0 2rem;
     }
 
 }
 
-@media (max-width:450px) {
+@media (max-width:449px) {
     #profile {
         max-width: 80%;
         gap: 2rem;
@@ -739,6 +779,21 @@
         position: absolute;
         display: block;
         margin: -2.5rem 0 0 2rem;
+    }
+    /*Media query matchMedia */
+    #timelineExperience.movilUno {
+        display:block;
+        width: 20.7rem;
+        margin-left: 0;
+    }
+    #timelineEducation.movilUno {
+        display:block;
+        width: 20.7rem;
+        margin-left: 0;
+    }
+
+    #itemList .detailEducationOne.movilUno {
+        padding-top: 50px;
     }
 }
 
@@ -838,14 +893,14 @@
             width: 15.9rem;
             height: 15rem;
             top: 35rem;
-            right: 5.7rem;
+            right: 5.3rem;
         }
 
         #foto img {
             width: 20rem;
             height: 26rem;
             margin-right: 30rem;
-            margin-left: -1rem;
+            margin-left: 0rem;
             top: -3rem;
         }
 
@@ -878,6 +933,11 @@
 
         #languageList {
             margin-left: -1.5rem;
+        }
+
+        #techContainer {
+            width: 21.87rem;
+            margin-left: 5.5px;
         }
     }
 

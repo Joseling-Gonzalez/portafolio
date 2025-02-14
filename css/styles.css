@@ -105,6 +105,7 @@ body {
 }
 
 #aboutMe {
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #450000; 
