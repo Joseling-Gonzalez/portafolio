@@ -55,25 +55,31 @@ experienceBtn.addEventListener('click', () => {
         containerLanguages.classList.remove('activeContainer');
         containerLanguages.style.display = 'none';
         fn_mqueryContainerProfessionalProfile();
+        containerExperience.style.display = 'block'
     }
 
     function fn_mqueryContainerProfessionalProfile () {
-        const  mquerymovil = window.matchMedia('(max-width: 449px)');
-        const  mquerymovilDos = window.matchMedia('(min-width: 450px) and (max-width: 550px)');
+        const  mquerymovil = window.matchMedia('(max-width: 422px)');
+        const  mquerymovilUno = window.matchMedia('(min-width: 423) and (max-width: 449px)');
+        const  mquerymovilDos = window.matchMedia('(min-width: 450px) and (max-width: 500px)');
+        const mquerytablet= window.matchMedia('(min-width: 501px) and (max-width: 650px)');
         const  mquerydesktop = window.matchMedia('(min-width: 1261px)');
 
-        if(mquerymovil.matches)
+        if (mquerymovil.matches) 
+        {
+            timelineExperience.classList.toggle('movil');
+            timelineEducation.classList.toggle('movil');
+        }
+        else if(mquerymovilUno.matches)
         {           
             timelineExperience.classList.toggle('movilUno');
             timelineEducation.classList.toggle('movilUno');
-            containerExperience.style.display = 'block';
         }
         else if(mquerymovilDos.matches)
         {
             console.log("mquerymovilDos " + {mquerymovilDos})
             timelineExperience.classList.toggle('movilDos');
             timelineEducation.classList.toggle('movilDos');
-            containerExperience.style.display = 'block';
         }
         else if(mquerydesktop.matches)
         {

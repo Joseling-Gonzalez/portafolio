@@ -551,8 +551,6 @@
     }
 }
 
-
-
 @media (max-width: 650px) {
     #menu.active-menu {
         width: 430px;
@@ -605,6 +603,10 @@
     }
 }
 
+/* @media (min-width: 501px) and (max-width: 650px) {
+
+} */
+
 @media (min-width: 450px) and (max-width: 500px) {
     #menu.active-menu {
         width: 350px;
@@ -623,13 +625,13 @@
         width: 15.1rem;
         height: 14rem;
         top: 32rem;
-        right: 10.3rem;
+        right: 8.3rem;
     }
 
     #foto img {
         width: 20rem;
         height: 24rem;
-       margin-right: 22rem;
+       margin-right: 24rem;
        top: -3rem;
     }
 
@@ -742,11 +744,30 @@
         top: -3rem;
     }
 
-    #timelineExperience, #timelineEducation {
-        width: 20.7rem;
+    #containerExperience {
         margin-left: 0;
     }
 
+    #timelineExperience, #timelineEducation {
+        /* width: 20.7rem; */
+        width: 77.4%;
+        margin-left: 0;
+    }
+    /*Media query matchMedia */
+    #timelineExperience.movilUno {
+        display:block;
+        width: 77.4%;
+        margin-left: 0;
+    }
+    #timelineEducation.movilUno {
+        display:block;
+        width: 77.4%;
+        margin-left: 0;
+    }
+
+    #itemList .detailEducationOne.movilUno {
+        padding-top: 50px;
+    }
     #itemList .detailEducationOne {
         padding-top: 50px;
     }
@@ -780,24 +801,10 @@
         display: block;
         margin: -2.5rem 0 0 2rem;
     }
-    /*Media query matchMedia */
-    #timelineExperience.movilUno {
-        display:block;
-        width: 20.7rem;
-        margin-left: 0;
-    }
-    #timelineEducation.movilUno {
-        display:block;
-        width: 20.7rem;
-        margin-left: 0;
-    }
-
-    #itemList .detailEducationOne.movilUno {
-        padding-top: 50px;
-    }
+    
 }
 
-@media (max-width: 420px) {
+@media (max-width: 422px) {
     #description p {
         padding: 0px 26rem 0 1rem;
     }
@@ -809,6 +816,21 @@
 
     #foto img {
         margin-right: 24.1rem;        
+    }
+
+    #timelineExperience, #timelineEducation {
+        width: 82.5%;
+        margin-left: -0.58rem;
+    }
+
+    #timelineExperience.movil {
+        width: 82.5%;
+        margin-left: -0.58rem;
+    }
+
+    #timelineEducation.movil {
+        width: 82.5%;
+        margin-left: -0.58rem;
     }
 
     #techContainer {
@@ -862,6 +884,7 @@
     .box>svg, svg#sql {
         max-width: 3.5rem;
     }
+}
 
     @media (max-width: 370px) {
         #menu.active-menu {
