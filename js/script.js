@@ -55,7 +55,6 @@ experienceBtn.addEventListener('click', () => {
         containerLanguages.classList.remove('activeContainer');
         containerLanguages.style.display = 'none';
         fn_mqueryContainerProfessionalProfile();
-        containerExperience.style.display = 'block'
     }
 
     function fn_mqueryContainerProfessionalProfile () {
@@ -69,17 +68,20 @@ experienceBtn.addEventListener('click', () => {
         {
             timelineExperience.classList.toggle('movil');
             timelineEducation.classList.toggle('movil');
+            containerExperience.style.display = 'block'
         }
         else if(mquerymovilUno.matches)
         {           
             timelineExperience.classList.toggle('movilUno');
             timelineEducation.classList.toggle('movilUno');
+            containerExperience.style.display = 'block'
         }
         else if(mquerymovilDos.matches)
         {
             console.log("mquerymovilDos " + {mquerymovilDos})
             timelineExperience.classList.toggle('movilDos');
             timelineEducation.classList.toggle('movilDos');
+            containerExperience.style.display = 'block'
         }
         else if(mquerydesktop.matches)
         {
