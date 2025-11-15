@@ -1,3 +1,9 @@
+@media (max-width:1400px) {
+    #circle-photo {
+        right:9.1rem;
+    }
+}
+
 @media (max-width: 1260px) {
     #wrap {
         width: 78%;
